@@ -15,6 +15,7 @@ def select_file():
     if input_file:
         print("Selected file:", input_file)
 
+## save file path
 def select_save_directory():
     global out_folder_path
     out_folder_path = filedialog.askdirectory()
@@ -22,16 +23,20 @@ def select_save_directory():
         print("Selected directory:", out_folder_path)
     root.destroy()
 
+
 root = tk.Tk()
 root.title("File and Directory Selection")
 root.geometry('600x300')
 
+#select file fx
 select_file_button = tk.Button(root, text="Select File", command=select_file)
 select_file_button.pack(pady=20)
 
+#save dir button
 select_directory_button = tk.Button(root, text="Select Save Directory", command=select_save_directory)
 select_directory_button.pack()
 
+#initiate and resize tkinter UI
 root.mainloop()
 
 try:
@@ -52,8 +57,8 @@ for i, v in enumerate(recipient_data.columns):
 
 #add columns to df
 add_cols_list = ['ace_name','ace_number','date']
-recipient_data['ace_name'] = 'Annie Chen'
-recipient_data['provider_number'] = 'IP-24-11250'
+recipient_data['ace_name'] = 'ace provider name'
+recipient_data['provider_number'] = 'provider number'
 recipient_data['event_date'] = pd.to_datetime(recipient_data['event_date'], errors='coerce')
 recipient_data['event_date'] = recipient_data['event_date'].dt.strftime('%m-%d-%Y').astype(str)
 
