@@ -57,9 +57,8 @@ This Python script automates the generation of personalized DOCX documents using
 1.  **Run the script:**
     Navigate to the directory where the script is located using your terminal or command prompt and run:
     ```bash
-    python your_script_name.py
+    python CEU_builder.py
     ```
-    (Replace `your_script_name.py` with the actual name of your Python file.)
 
 2.  **Select Input File:**
     * A window titled "File and Directory Selection" will appear.
