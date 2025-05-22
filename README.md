@@ -25,7 +25,6 @@ This Python script automates the generation of personalized DOCX documents using
 
 1.  **Clone the repository or download the script:**
     ```bash
-    # If this is a git repository (optional)
     git clone <repository_url>
     cd <repository_directory>
     ```
